@@ -1,0 +1,50 @@
+.containerMoreAbout{
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.headerMoreAbout{
+  padding: 8px;
+  padding-left: 20px;
+}
+
+.headerMoreAbout button{
+  width: 40px;
+  height: 40px;
+  
+  line-height: 46px;
+  text-align: center;
+
+  border: 0;
+  
+  border-radius: 4px;
+  background-color: #1b1b20;
+
+  font-size: 1.4rem;
+  
+  transition: 0.3s;
+}
+
+.headerMoreAbout{
+  h3{
+    color: var(--gray-300);
+    font-size: 1rem;
+  }
+}
+
+.headerMoreAbout button:hover{
+  background-color: #ff6584;
+  transition: 0.3s;
+}
+
+.headerMoreAbout svg{
+  color: #eba417;
+  transition: 0.3s;
+}
+
+.headerMoreAbout button:hover svg{
+  color: black;
+}
+
+

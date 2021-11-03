@@ -1,0 +1,103 @@
+:root{
+  --first-family: "Roboto";
+  --second-family: Helvetica, Arial, sans-serif;
+  --third-family: 'Spectral', georgia;
+  
+  --white: #FFFFFF;
+
+  --gray-100: #e1e1e6;
+  --gray-300: #a8a8b3;
+  --gray-800: #29292e;
+  --gray-850: #1f2729;
+  --gray-900:#121214;
+  
+  --cyan-500:#61dafd;
+  --yellow-500: #eba417;
+}
+
+
+body{
+  background-color: var(--gray-900);
+  color: var(--white);
+}
+
+
+@media (max-width: 1080px){
+  html{
+    font-size:93.75% !important;;
+  }
+}
+
+@media (max-width: 720px){
+  html{
+    font-size: 70.5% !important;
+  }
+}
+
+
+body, input, textarea, select, button{
+  font:400 1rem "Roboto", sans-serif;
+}
+
+@media (max-width: 1080px){
+  html{
+    font-size: 93.75%;
+  } 
+}
+
+@media (max-width: 720px){
+  html{
+    font-size: 87.5%;
+  } 
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--first-family);  
+  font-weight: 400;
+}
+
+
+
+h1, h2, h3, h4, p{
+  margin: 0px;
+}
+
+ul, li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor:pointer;
+}
+
+
+.skeletonGlobal{
+  grid-area: 1/1;
+  height: 100%;
+  background-image: linear-gradient(90deg, #eee, rgb(141, 138, 138) 50%, #eee 100%);
+  background-color: rgb(163, 163, 163);
+  background-size: 200%;
+  animation: animeSkeleton 1.5s infinite linear;
+}
+
+
+@keyframes animeSkeleton{
+  0%{
+      background-position: 0px;
+  }
+  100%{
+      background-position: -200%;
+  }
+}

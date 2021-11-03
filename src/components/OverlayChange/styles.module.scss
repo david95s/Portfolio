@@ -1,0 +1,185 @@
+.protectedAll{
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+}
+
+.Overlay{
+  position: absolute;
+  top: 5rem;
+
+  width: 100%;
+  height: 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(0, 0, 0);
+  animation: animeComplete 2.5s forwards linear;
+
+  .wrapperAnimate{
+    position: relative;
+    overflow: hidden;
+  
+    width: 300px;
+    height: 300px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@keyframes animeComplete {
+  0%{
+    height: 0px;
+  }
+  50%{
+    height: 868px;
+  }
+  100%{
+    height: 0px;
+  }
+}
+
+
+
+.jsCenter{
+  background: linear-gradient(10deg, #3c388580,  #3f3d5677,  rgba(255, 217, 0, 0.96) 145%);
+  width: 180px;
+  position: absolute;
+
+  height: 180px;
+  text-align: center;
+  line-height: 180px;
+  border-radius: 50%;
+  z-index: 1;
+  
+  animation: animeRound 3s linear infinite;
+}
+
+.bellowJsCenter {
+  position: absolute;
+  text-shadow: 1px 1px 1px purple;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+
+
+@keyframes animeRound {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.defaultAnime{
+  z-index: 10;
+  position: absolute;
+    
+  width: 40px;
+  height: 40px;
+  line-height: 100px;
+  text-align: center;
+
+  font-weight: 700;
+
+  border-radius: 50%;  
+}
+
+.jqueryAnimate{
+  background-color: rgb(255, 101, 132);
+  animation: animeJS 1s forwards linear;
+}
+
+.jqueryAnimate p{
+  position: relative;
+  left: -8px;
+}
+
+.nextAnimate{
+  background-color: #6c63ff;
+  animation: animateNext 1s forwards linear;
+}
+
+.reactAnimate{
+  background-color: var(--cyan-500);
+  animation: animeReact 1s forwards linear;
+}
+
+
+.reduxtAnimate{
+  background-color: var(--yellow-500);
+  animation: animateRedux 1s forwards linear;
+}
+
+
+
+@keyframes animeJS {
+  0%{
+    transform: translate3d( 0, 0, 0);
+  }
+  50%{
+    transform: translate3d(-100px, -140px, 0);
+  }
+  100%{
+    transform: translate3d(  -100px, 100px, 10px);
+  }
+}
+
+@keyframes animateNext {
+  0%{
+    transform: translate3d( 0, 0, 0);
+  }
+  50%{
+    transform: translate3d(100px, 140px, 0);
+  }
+  100%{
+    transform: translate3d( 100px, -100px, -10px);
+  }
+}
+
+
+
+@keyframes animeReact {
+  0%{
+    transform: translate3d( -100px, 100px, 0);
+  }
+  50%{
+    transform: translate3d( 0px, 0px, 10px);
+  }
+  100%{
+    transform: translate3d(-100px, -100px, 0);
+  }
+}
+
+@keyframes animateRedux {
+  0%{
+    transform: translate3d( 100px, -100px, 0);
+  }
+  50%{
+    transform: translate3d( 0px, 0px, -10px);
+  }
+  100%{
+    transform: translate3d(100px, 100px, 0);
+  }
+}
+
+
+
+
+
+
+

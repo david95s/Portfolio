@@ -1,0 +1,23 @@
+.btnGit{
+  height: 45px;
+  border-radius: 3rem;
+  background-color: var(--gray-850);
+  border: 0;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: bold;
+  transition: filter 0.2s;
+}
+
+.btnGit:hover{
+  filter:brightness(0.8);
+}
+
+.btnGit svg{
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}

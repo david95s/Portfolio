@@ -1,0 +1,40 @@
+fieldset.containerSkeletonLoading{
+  width: 100%;
+  height: 359px;
+  padding: 3rem 2.5rem;
+
+  margin-top: 1.5rem;
+  margin-bottom: 130px;
+
+  border: 1px solid var(--cyan-500);  
+  border-radius: 5px;
+
+
+  legend{
+    font-size: 1.1rem;
+    padding: 0px 8px;
+  }
+
+  .askingSkeleton{
+    width: 97.85%;
+    margin: 0 auto;
+    margin-left: 15px;
+    height: 49px;
+    margin-bottom: 0.4rem;
+    border-radius: 3px;
+    // background-color: #eee;
+  }
+
+  .buttonSkeleton{
+    width: 200px;
+    height: 3rem;
+
+    margin-top: 28px;
+    margin-left: 20px;
+
+    border: 0;
+    border-radius: 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,91 @@
+
+.containerHome{
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-right: 70px;
+}
+/*
+  O Padding do containerHome e do LeftContainer 
+  padding-right: 70px;
+  padding-left: 100px;
+  Eles q deixam proporcional layote
+*/
+.leftContainer{
+  width: 50%;
+  padding-left: 140px;
+  animation: aniLeft 0.5s forwards;
+}
+
+.rightContainer{
+  width: 45%;
+  animation: aniRight 0.5s forwards;
+}
+
+@keyframes aniLeft {
+  0%{
+    transform: translate3d(0, -80px, 0);
+  }
+  100%{
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes aniRight {
+  0%{
+    transform: translate3d(0, 80px, 0);
+  }
+  100%{
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.containerChamada{
+  margin: 0 auto;
+  span{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  h1{
+    font-size: 4.2rem;
+    line-height: 5rem;
+    font-weight: 900;
+    margin-top: 2.5rem;
+    span{
+      font-size: 4.5rem;
+      font-weight: 900;
+      color:var(--cyan-500);
+    }  
+  }
+
+  p {
+    margin-top: 4rem;
+    span{
+      color: #ff6584;
+      font-size: 1rem;
+      font-weight: 400;
+
+      &.theJs{
+        color:var(--cyan-500);
+      }
+
+      &.chaves{
+        color: var(--yellow-500);
+        margin: 0 5px;
+      }
+      
+      &.pathJs{
+        color: rgb(219 138 116);
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+
+
+
+
+

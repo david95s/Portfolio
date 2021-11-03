@@ -1,0 +1,115 @@
+.containerAbstract{
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px;
+
+  .sidesHome{
+    position: relative;
+  }
+  
+  .leftContainer{
+    top: -20px;
+    padding-left: 80px;
+    // border: solid 1px white;
+    animation: aniLeft 0.5s forwards;
+    width: 50%;
+
+    .containImport{
+      color: #ff6584;
+
+      .theJs{
+        color:var(--cyan-500);
+      }
+      .chaves{
+        color: var(--yellow-500);
+        margin: 0 5px;
+      }
+      .pathJs{
+        color: rgb(219 138 116);
+        margin-left: 5px;
+        margin-right: 8px;
+      }
+    } 
+    //----
+    .myDescription{
+      font-size: 2rem;
+      line-height: 3rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      color: var(--gray-100);
+
+      span{
+        color:var(--cyan-500);
+        font-weight: 700;
+      }
+    }
+    //---
+    .stickAround{
+      margin-top: 75px;
+      
+      button{
+        margin-top: 25px;
+      }    
+      
+      p{
+        font-size: 1.1rem;
+        color: var(--gray-300);
+        span{
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  
+  .rightContainer{
+    animation: aniRight 0.5s forwards;
+    width: 50%;
+    padding-left: 40px;
+
+    .circleInsideRight{
+      position: absolute;
+      right: 100px;
+      top: 100px;
+    
+      padding-top: 40%;
+      width: 40%;
+      border-radius: 50%;
+      background: linear-gradient(150deg, #6c63ff,  #3f3d56,  var(--gray-900) 43%);
+      z-index: -1;
+    } 
+  }
+  
+  @keyframes aniLeft {
+    0%{
+      transform: translate3d(-80px, 0, 0);
+    }
+    100%{
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes aniRight {
+    0%{
+      transform: translate3d(80px, 0, 0);
+    }
+    100%{
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+
+
+
+@media (max-width: 1217px){
+  .leftContainer{
+    top: 20px !important;
+    padding-left: 0px !important;
+    width: 54% !important;
+  }
+  .myDescription{
+    font-size: 1.9rem !important;
+  }
+}
+
+

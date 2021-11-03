@@ -1,0 +1,154 @@
+.containerTabs{
+  padding: 2px;
+}
+
+.containerTabs header{
+  padding: 10px 18px;
+  border-radius: 3px;
+
+  display: flex;
+  z-index: 10;
+  /* background-color: rgb(23, 22, 27); */
+  /* background-color: #282a36; */
+}
+
+
+.containerTabs header button{
+  margin-right: 20px;
+  padding: 10px 15px;
+
+  background-color: #ccc;
+
+  position: relative;
+  height: 130px;
+  width: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  border-radius: 10px;
+  border: none;
+
+  /* background-color: #6c63ff; */
+  background: linear-gradient(15deg,#6c63ff, #4c47ac, #6c63ff);
+
+  filter: brightness(0.6);
+  transition: 0.3s;
+
+  color: var(--gray-100);
+  font-size: 1rem;
+
+  &:hover{
+    filter: brightness(1);
+  }
+
+  &.btnActive{
+    filter: brightness(1);
+  }
+
+  &:disabled{
+    cursor: progress;
+  }
+
+  &:disabled:hover{
+  filter: brightness(0.6);
+  }
+}
+
+
+
+.containerTabs header button .theCheck{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 7px;
+  height: 7px;
+
+
+  border-radius: 3px;
+  border: solid 1px black;
+
+  box-sizing: content-box;
+
+  background-color: black;
+  filter: brightness(0.4);
+}
+
+.containerTabs header button .checkedChek{
+  filter: brightness(1);
+  background-color: tomato;
+  border: solid 2px rgb(29, 28, 28);
+}
+
+
+.containerTabs section {
+  margin-top: 10px;
+  padding: 0px 18px;
+  border-radius: 4px;
+
+  overflow: auto;  
+  /*  */
+}
+
+.containerTabs section .contentBody {
+  z-index: 0;
+  animation: animeToDown .8s forwards;
+}
+
+// @keyframes animeToDown {
+//   0%{
+//     transform: translate3d( 0, -40px, 0);
+//     opacity: 0;
+//   }
+//   100%{
+//     transform: translate3d( 0, 0, 0);    
+//     opacity: 1;
+//   }
+// }
+
+
+.containerTabs section .bodyWhileNoTabs{
+  text-align: center;
+  padding: 28px 0;
+  padding-bottom: 40px;
+  background-color: #1a1b24;
+  border-radius: 8px;
+}
+
+
+.containerTabs section .bodyWhileNoTabs p{
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: var(--gray-100);
+}
+
+
+.containerTabs section .bodyWhileNoTabs span.pUniverse{
+  color: var(--cyan-500);
+  font-weight: 700;
+}
+
+.containerTabs section .bodyWhileNoTabs img{
+  width: 100%;
+  height: 230px;
+  margin-top: 40px;
+  animation: animeSvgUniverse 2.5s linear infinite;
+}
+
+@keyframes animeSvgUniverse {
+  0%{
+    transform: translate3d( 0px, 0, 0);
+  }
+  50%{
+    transform: translate3d( 0px, -10px, 0);    
+  }
+  100%{
+    transform: translate3d( 0, 0px, 0);
+  }
+}
+
+
